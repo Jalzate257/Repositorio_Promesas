@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Interactuar con APIs AI</title> </head>
+
+<body>
+    <div class="container">
+        <h1>Interactuar con APIs AI</h1>
+        <textarea id="inputText"
+            placeholder="Escribe tu pregunta o texto aquí... Por ejemplo: Explica cómo funciona la IA en pocas palabras"></textarea>
+        <button onclick="sendToGemini()">Enviar</button>
+        <div class="loader" id="loader"></div>
+        
+        <h2>Sentimiento del texto:</h2> <div id="sentimentDisplay"></div> <h2>Respuesta de Gemini:</h2>
+        <div id="geminiResponse"></div>
+        
+        <h2>Respuesta de Cohere:</h2>
+        <div id="cohereResponse"></div>
+    </div>
+</body>
+
+</html>
